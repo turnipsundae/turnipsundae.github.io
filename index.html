@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Boostrap Basics</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <title>Resume and Projects</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
   <body class="container">
     <div class="row">
       <div class="col-md-6 img-responsive">
-        <img class="title-logo" src="http://placekitten.com/150/150">
+        <!-- <img class="title-logo" src="http://placekitten.com/150/150"> -->
       </div>
       <div class="col-md-6 text-uppercase text-right">
         <h1 class="text-thin title-super">Kevin Lau</h1>
-        <h3>Full Stack Dev</h3>
+        <h3>Web and Mobile</h3>
       </div>
     </div>
     <hr ruler-thick></hr>
-    <div class="row">
-      <div class="col-md-12">
-        <img src="http://placekitten.com/1140/350" class="img-responsive">
-      </div>
-    </div>
     <div class="row">
       <div class="col-md-12 text-muted"><h2>Featured Work</h2></div>
     </div>
     <div class="row text-center">
       <div class="col-md-4">
-        <img src="https://lh3.googleusercontent.com/lz-m5oF03GXClHwInuMR3h-J78uygxMx4j0JbXWVaB7AadH4Imv1twQlXLocRar4Y-5U=w300-rw" class="img-responsive center-block" data-toggle="modal" data-target="#scoreKeeperModal">
+        <img src="static/fitj_front.png" class="img-responsive center-block" data-toggle="modal" data-target="#fitjModal">
+        <h3 class="text-uppercase">Fit-j</h3>
+        <p><a href="http://fitj.herokuapp.com">fitj.herokuapp.com</a></p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://lh3.googleusercontent.com/lz-m5oF03GXClHwInuMR3h-J78uygxMx4j0JbXWVaB7AadH4Imv1twQlXLocRar4Y-5U=w300-rw" class="img-responsive center-block border" data-toggle="modal" data-target="#scoreKeeperModal">
         <h3 class="text-uppercase">ScoreKeeper</h3>
         <p><a href="https://play.google.com/store/apps/details?id=com.laudev.android.scorekeeper">com.laudev.android.scorekeeper</a></p>
       </div>
@@ -38,13 +38,27 @@
         <h3 class="text-uppercase">Split Pea</h3>
         <p><a href="https://play.google.com/store/apps/details?id=com.laudev.android.splitpea">com.laudev.android.splitpea</a></p>
       </div>
-      <div class="col-md-4">
-        <img src="http://placekitten.com/300/300" class="img-responsive center-block" data-toggle="modal" data-target="#gitHubModal">
-        <h3 class="text-uppercase">GitHub Page</h3>
-        <p><a href="http://turnipsundae.github.io">turnipsundae.github.io</a></p>
-      </div>
+    </div>
 
     <!-- Modal -->
+    <div class="modal fade" id="fitjModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Fit-j</h4>
+                </div>
+                <div class="modal-body">
+<!--                     <img class="img-responsive" src="https://lh3.googleusercontent.com/aSDAVaThPWsYpL-vCcB_c2rzgmH619nzQ_zqkfrN6O6SSOCbxhSvWJxrtDToiAiXPoI=h900-rw">
+ -->                    
+                  This is my first web app project. Fit-j aims to help you discover and track your exercises. I couldn't find something that was simple and speedy on the internet, so I decided to create my own. Eventually I want the app to learn user preferences and make awesome workout suggestions. You should look forward to exercising! 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="scoreKeeperModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -52,8 +66,9 @@
                     <h4 class="modal-title" id="myModalLabel">Score Keeper App</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="https://lh3.googleusercontent.com/aSDAVaThPWsYpL-vCcB_c2rzgmH619nzQ_zqkfrN6O6SSOCbxhSvWJxrtDToiAiXPoI=h900-rw">
-                    This was my first Android app published on Google Play. I learned about xml, java, and other basic concepts around native Android apps. I learned to use stakeoverflow, blog tutorials, and other resources to implemented an engaging UI--it emulates Gmail's swipe to delete feature. I even tried to implement single tap and long tap in addition to the custom swipe animation, which was very challenging! Not everything worked according to plan. I should have removed the long tap which was causing the bugs, but kept it, convinced that more features meant better. The lesson? I learned that the best features are, firstly, working features.
+<!--                     <img class="img-responsive" src="https://lh3.googleusercontent.com/aSDAVaThPWsYpL-vCcB_c2rzgmH619nzQ_zqkfrN6O6SSOCbxhSvWJxrtDToiAiXPoI=h900-rw">
+ -->                    
+                  This was my first Android app published on Google Play. I learned about xml, java, and other basic concepts around native Android apps. I learned to use stakeoverflow, blog tutorials, and other resources to implemented an engaging UI--it emulates Gmail's swipe to delete feature. I even tried to implement single tap and long tap in addition to the custom swipe animation, which was very challenging! Not everything worked according to plan. I should have removed the long tap which was causing the bugs, but kept it, convinced that more features meant better. The lesson? I learned that the best features are, firstly, working features.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -70,8 +85,9 @@
                     <h4 class="modal-title" id="myModalLabel">Split Pea App</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="https://lh3.googleusercontent.com/AdgkfTkfDi03yprGnkrO7aOMO38gqPeE53qSr-Lu3E_dVDz02Ut84xIoFjoeerYFwA=w300-rw">
-                    This was my second Android app published on Google Play. I learned about list adapters, launching activities, parceling data between activities, using share action provider, and much, much more! I tried to incorporate code from other projects, such as a calculator and the Tesseract ORC. However, I spent a week and couldn't implement either correctly, so moved on to using existing knowledge to build the essential functions. Having a peer review would have sped up my learning--next time I'll start or join a meet-up.
+<!--                     <img class="img-responsive" src="https://lh3.googleusercontent.com/AdgkfTkfDi03yprGnkrO7aOMO38gqPeE53qSr-Lu3E_dVDz02Ut84xIoFjoeerYFwA=w300-rw">
+ -->                    
+                  This was my second Android app published on Google Play. I learned about list adapters, launching activities, parceling data between activities, using share action provider, and much, much more! I tried to incorporate code from other projects, such as a calculator and the Tesseract ORC. However, I spent a week and couldn't implement either correctly, so moved on to using existing knowledge to build the essential functions. Having a peer review would have sped up my learning--next time I'll start or join a meet-up.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -80,22 +96,5 @@
         </div>
     </div>
 
-        <!-- Modal -->
-    <div class="modal fade" id="gitHubModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">GitHub Page</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png">
-                    This was my first custom web page. I learned about HTML, CSS, and how to host a page for free. Having tried Android development, it was much less daunting to pick up HTML and CSS.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
   </body>
 </html>
